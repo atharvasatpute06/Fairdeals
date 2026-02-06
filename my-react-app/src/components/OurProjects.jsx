@@ -8,7 +8,7 @@ const OurProjects = () => {
   const projects = [
     {
       id: 1,
-      image: '/Project_1.png',
+      image: `${import.meta.env.BASE_URL}Project_1.png`,
       title: 'MICRO WINDMILL',
       subtitle: 'Mandavi Village',
       description: 'Installed for 4 Acre Farm House Bungalow in Mandavi Village Near Khadakwasala',
@@ -19,7 +19,7 @@ const OurProjects = () => {
     },
     {
       id: 2,
-      image: '/Project_2.png',
+      image: `${import.meta.env.BASE_URL}Project_2.png`,
       title: 'SOLAR + WIND HYBRID SYSTEM',
       subtitle: 'Govitri Village, Kamshet',
       description: 'Installed for 4 Acre Farm House USED  AS MAIN SOURCE OF ELECTRICAL POWERFor 3HP Water pump and General Electrical Load  At Govitri Village, Kamshet.',
@@ -30,7 +30,7 @@ const OurProjects = () => {
     },
     {
       id: 3,
-      image: '/Project_3.png',
+      image: `${import.meta.env.BASE_URL}Project_3.png`,
       title: 'SOLAR + WIND HYBRID SYSTEM',
       subtitle: 'Warje',
       description: 'Installed for 200 Nos. Of Common Lights and Water PumpInstallation done on 12 story Residential Tower at Warje.',
@@ -41,7 +41,7 @@ const OurProjects = () => {
     },
     {
       id: 4,
-      image: '/Project_4.png',
+      image: `${import.meta.env.BASE_URL}Project_4.png`,
       title: '50 kw SOLAR GRID TIE SYSTEM',
       subtitle: 'Bhuleshwar',
       description: 'Approx. 5000 Sq. Ft. Area used as Solar parking.Installation done for PRAVIN / SUHANA MASALE warehouse at Bhuleshwar',
@@ -51,7 +51,7 @@ const OurProjects = () => {
     },
     {
       id: 5,
-      image: '/Project_5.png',
+      image: `${import.meta.env.BASE_URL}Project_5.png`,
       title: '1 MW SOLAR POWER PLANT',
       subtitle: 'Solapur',
       description: '1 MW SOLAR POWER PLANT for Captive Use Installed at Solapur',
@@ -62,7 +62,7 @@ const OurProjects = () => {
     },
         {
       id: 6,
-      image: '/Project_6.png',
+      image: `${import.meta.env.BASE_URL}Project_6.png`,
       title: '1.25 MW SOLAR POWER PLANT',
       subtitle: 'Sangola',
       description: '1.25 MW SOLAR POWER PLANT with PPA for Commercial Use Installed at Sangola',
@@ -85,7 +85,7 @@ const OurProjects = () => {
     <section className="our-projects-section" id="projects">
       <div className="our-projects-container">
         <div className="projects-header">
-          <img src="/leave.png" alt="Leaf" className="projects-leaf-icon" />
+          <img src={`${import.meta.env.BASE_URL}leave.png`} alt="Leaf" className="projects-leaf-icon" />
           <h2 className="projects-heading">Our Projects</h2>
         </div>
 

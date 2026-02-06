@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div className="about-content-wrapper">
           {/* Left Side - Heading with Leaf Icon */}
           <div className="about-heading-container">
-            <img src="/leave.png" alt="Leaf" className="leaf-icon" />
+            <img src={`${import.meta.env.BASE_URL}leave.png`} alt="Leaf" className="leaf-icon" />
             <h2 className="about-heading">About Us</h2>
           </div>
 

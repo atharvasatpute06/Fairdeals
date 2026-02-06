@@ -16,13 +16,13 @@ const OurServices = () => {
       <div className="our-services-container">
         {/* Left Side */}
         <div className="services-left">
-          <img src="/leave.png" alt="Leaf" className="services-leaf-icon" />
+          <img src={`${import.meta.env.BASE_URL}leave.png`} alt="Leaf" className="services-leaf-icon" />
           <h2 className="services-heading">Our Services</h2>
           <p className="services-subtitle">
             Green Power Developer |<br />
             PMC | System Integrator
           </p>
-          <img src="/ourservers.png" alt="Green Power" className="services-plug-image" />
+          <img src={`${import.meta.env.BASE_URL}ourservers.png`} alt="Green Power" className="services-plug-image" />
         </div>
 
         {/* Right Side */}

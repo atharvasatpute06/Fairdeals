@@ -16,7 +16,7 @@ const WhyInvestment = () => {
         {/* Left Side - Heading and Image */}
         <div className="investment-left">
           <h2 className="investment-heading">Why R.E. Investment</h2>
-          <img src="/aa.png" alt="Green Investment" className="investment-image" />
+          <img src={`${import.meta.env.BASE_URL}aa.png`} alt="Green Investment" className="investment-image" />
         </div>
 
         {/* Right Side - Benefits List */}
@@ -24,7 +24,7 @@ const WhyInvestment = () => {
           <ul className="benefits-list">
             {benefits.map((benefit, index) => (
               <li key={index} className="benefit-item">
-                <img src="/leave.png" alt="Leaf" className="benefit-icon" />
+                <img src={`${import.meta.env.BASE_URL}leave.png`} alt="Leaf" className="benefit-icon" />
                 <span className="benefit-text">{benefit}</span>
               </li>
             ))}

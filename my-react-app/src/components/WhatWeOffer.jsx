@@ -52,7 +52,7 @@ const WhatWeOffer = () => {
     <section className="what-we-offer-section" id="offer">
       <div className="what-we-offer-container">
         <div className="offer-header">
-          <img src="/leave.png" alt="Leaf" className="offer-leaf-icon" />
+          <img src={`${import.meta.env.BASE_URL}leave.png`} alt="Leaf" className="offer-leaf-icon" />
           <h2 className="offer-heading">What we offer</h2>
         </div>
 

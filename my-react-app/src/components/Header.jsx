@@ -74,7 +74,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>
-          <img src="/logo.jpg" alt="Kardeai Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Kardeai Logo" className="logo-img" />
         </div>
         
         <div 

@@ -8,16 +8,14 @@ const ClientCarousel = () => {
 
   // Client logos array - replace with your actual logo paths
   const logos = [
-    '/hero-bg.png',
-    '/clients/logo2.png',
-    '/clients/logo3.png',
-    '/clients/logo4.png',
-    '/clients/logo5.png',
-    '/clients/logo6.png',
-    '/clients/logo7.png',
-    '/clients/logo8.png',
-    '/clients/logo9.png',
-    '/clients/logo10.png',
+    `${import.meta.env.BASE_URL}l1.svg`,
+    `${import.meta.env.BASE_URL}l2.png`,
+    `${import.meta.env.BASE_URL}l3.png`,
+    `${import.meta.env.BASE_URL}l4.png`,
+    `${import.meta.env.BASE_URL}l5.webp`,
+    `${import.meta.env.BASE_URL}l6.png`,
+    `${import.meta.env.BASE_URL}l7.png`,
+    `${import.meta.env.BASE_URL}l8.png`,
   ];
 
   // Duplicate logos for infinite scroll effect
@@ -29,7 +27,7 @@ const ClientCarousel = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => prevIndex + 1);
-    }, 2000);
+    }, 1000); // Much faster - changed from 1500ms to 1000ms (1 second)
 
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
@@ -85,7 +83,7 @@ const ClientCarousel = () => {
               className="carousel-track"
               style={{
                 transform: `translateX(-${currentIndex * (100 / 7)}%)`,
-                transition: 'transform 0.5s ease-in-out'
+                transition: 'transform 0.3s ease-in-out' // Faster and smoother - changed from 0.4s to 0.3s
               }}
             >
               {duplicatedLogos.map((logo, index) => (

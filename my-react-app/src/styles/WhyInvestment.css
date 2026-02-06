@@ -30,8 +30,8 @@
 
 .investment-image {
   width: 100%;
-  max-width: 1200px;
-  height: 400px;
+  max-width: 400px;
+  height: auto;
   object-fit: contain;
   margin-left: -70px;
 }
@@ -86,7 +86,7 @@
   }
 
   .investment-image {
-    max-width: 350px;
+    max-width: 320px;
   }
 
   .benefit-text {

@@ -45,10 +45,12 @@
 }
 
 .services-plug-image {
-  width: 700px;
-  height: 300px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   object-fit: contain;
   margin-left: -70px;
+  margin-top: 20px;
 }
 
 /* Right Side */
@@ -106,7 +108,8 @@
   }
 
   .services-plug-image {
-    width: 240px;
+    width: 100%;
+    max-width: 280px;
   }
 
   .services-list-box {

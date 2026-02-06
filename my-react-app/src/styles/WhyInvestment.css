@@ -1,0 +1,165 @@
+.why-investment-section {
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.why-investment-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Side */
+.investment-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.investment-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #5a7a4a;
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.investment-image {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  object-fit: contain;
+  margin-left: -70px;
+}
+
+/* Right Side */
+.investment-right {
+  display: flex;
+  align-items: center;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+
+.benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.benefit-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #3a4a3a;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .why-investment-container {
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+  }
+
+  .investment-heading {
+    font-size: 40px;
+  }
+
+  .investment-image {
+    max-width: 350px;
+  }
+
+  .benefit-text {
+    font-size: 20px;
+  }
+
+  .benefit-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-investment-section {
+    padding: 60px 20px;
+  }
+
+  .why-investment-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .investment-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .investment-heading {
+    font-size: 36px;
+  }
+
+  .investment-image {
+    display: none; /* Hide on mobile */
+  }
+
+  .benefit-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .benefit-text {
+    font-size: 18px;
+  }
+
+  .benefit-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-investment-section {
+    padding: 40px 15px;
+  }
+
+  .investment-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .investment-image {
+    display: none; /* Hide on mobile */
+  }
+
+  .benefit-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .benefit-text {
+    font-size: 16px;
+  }
+
+  .benefit-item {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,105 @@
+.get-started-section {
+  min-height: 500px;
+  background: url('/Expore.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.get-started-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.get-started-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.get-started-leaf {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.get-started-heading {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+}
+
+.get-started-btn {
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #B1EA79;
+  color: #2c3e2c;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.get-started-btn:hover {
+  background: #9dd665;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(177, 234, 121, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .get-started-section {
+    min-height: 400px;
+    padding: 60px 20px;
+  }
+
+  .get-started-leaf {
+    width: 40px;
+    height: 40px;
+  }
+
+  .get-started-heading {
+    font-size: 36px;
+  }
+
+  .get-started-btn {
+    padding: 12px 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-started-section {
+    min-height: 350px;
+    padding: 40px 15px;
+  }
+
+  .get-started-leaf {
+    width: 35px;
+    height: 35px;
+  }
+
+  .get-started-heading {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .get-started-btn {
+    padding: 12px 35px;
+    font-size: 12px;
+  }
+}

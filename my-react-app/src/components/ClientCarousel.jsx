@@ -27,7 +27,7 @@ const ClientCarousel = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => prevIndex + 1);
-    }, 1000); // Much faster - changed from 1500ms to 1000ms (1 second)
+    }, 600); // Much faster - 600ms (0.6 seconds)
 
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
@@ -83,7 +83,7 @@ const ClientCarousel = () => {
               className="carousel-track"
               style={{
                 transform: `translateX(-${currentIndex * (100 / 7)}%)`,
-                transition: 'transform 0.3s ease-in-out' // Faster and smoother - changed from 0.4s to 0.3s
+                transition: 'transform 0.2s ease-in-out' // Faster and smoother - changed from 0.4s to 0.3s
               }}
             >
               {duplicatedLogos.map((logo, index) => (
